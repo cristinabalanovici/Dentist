@@ -6,11 +6,11 @@
 
     <ContentPage.Content>
         <StackLayout>
-            <Button Text="Cabinete" TextColor="Navy" BackgroundColor="AliceBlue" Clicked="Cabinete_OnClicked" HeightRequest="100" FontSize="Medium">
+            <Button Text="Cabinete" TextColor="Navy" BackgroundColor="AliceBlue" Clicked="Cabinete_OnClicked" HeightRequest="80" FontSize="Medium">
             </Button>
-            <Button Text="Clienti" TextColor="Navy" BackgroundColor="AliceBlue" Clicked="Clienti_OnClicked" HeightRequest="100" FontSize="Medium">
+            <Button Text="Clienti" TextColor="Navy" BackgroundColor="AliceBlue" Clicked="Clienti_OnClicked" HeightRequest="80" FontSize="Medium">
             </Button>
-            <Button Text="Programari" TextColor="Navy" BackgroundColor="AliceBlue" Clicked="Programari_OnClicked" HeightRequest="100" FontSize="Medium">
+            <Button Text="Programari" TextColor="Navy" BackgroundColor="AliceBlue" Clicked="Programari_OnClicked" HeightRequest="80" FontSize="Medium">
             </Button>
         </StackLayout>
     </ContentPage.Content>
