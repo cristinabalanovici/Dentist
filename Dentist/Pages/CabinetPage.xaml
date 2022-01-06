@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Dentist.CabinetPage"
+             Title="Cabinete">
+             <d:ContentPage.BindingContext>
+                <local:CabinetPage/>
+             </d:ContentPage.BindingContext>
+
+                <ContentPage.Content>
+                    <CollectionView x:Name="blobCollectionView"  
+                                SelectionMode="Single">
+                        <CollectionView.ItemTemplate>
+                            <DataTemplate>
+                                <StackLayout Padding="10">
+                                    <Frame BackgroundColor="LightGreen" HasShadow="True" BorderColor="Black" CornerRadius="5">
+                                        <Label Text="{Binding Nume}"/>
+                                    </Frame>
+                                </StackLayout>
+                            </DataTemplate>
+                        </CollectionView.ItemTemplate>
+                        <CollectionView.EmptyView>
+                        <StackLayout>
+                            <Label VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand"
+                                   Text="Nu sunt cabinete definite"/>
+                        </StackLayout>
+                    </CollectionView.EmptyView>
+                </CollectionView>
+            </ContentPage.Content>
+
+            <ContentPage.ToolbarItems>
+                <ToolbarItem Text="Adauga" Clicked="Adauga_Clicked"/>
+                <ToolbarItem Text="Modifica" Clicked="Modifica_Clicked"/>
+                <ToolbarItem Text="Sterge" Clicked="Sterge_Clicked"/>
+                <ToolbarItem Text="Sterge Toate" Clicked="DeleteAll_Clicked"/>
+            </ContentPage.ToolbarItems>
+
+        </ContentPage>
